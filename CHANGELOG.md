@@ -15,6 +15,7 @@ and this project adheres to
 
 ### Added
 
+- Optimistic cache ([#2145]).
 - Blocking access using client IDs ([#2624], [#3162]).
 - `source` directives support in `/etc/network/interfaces` on Linux ([#3257]).
 - RFC 9000 support in DNS-over-QUIC.
@@ -77,6 +78,7 @@ released by then.
 [#1381]: https://github.com/AdguardTeam/AdGuardHome/issues/1381
 [#1691]: https://github.com/AdguardTeam/AdGuardHome/issues/1691
 [#2141]: https://github.com/AdguardTeam/AdGuardHome/issues/2141
+[#2145]: https://github.com/AdguardTeam/AdGuardHome/issues/2145
 [#2280]: https://github.com/AdguardTeam/AdGuardHome/issues/2280
 [#2439]: https://github.com/AdguardTeam/AdGuardHome/issues/2439
 [#2441]: https://github.com/AdguardTeam/AdGuardHome/issues/2441

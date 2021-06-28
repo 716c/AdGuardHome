@@ -4,6 +4,11 @@
 
 ## v0.107: API changes
 
+### New field `"cache_optimistic"` in DNS configuration
+
+* The new optional field `"cache_optimistic"` of `DNSConfig` makes AdGuard Home
+  use or not use the optimistic cache mechanism.
+
 ###  Client IDs in Access Settings
 
 * The `POST /control/access/set` HTTP API now accepts client IDs in
