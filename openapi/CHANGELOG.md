@@ -4,10 +4,13 @@
 
 ## v0.107: API changes
 
-### New field `"cache_optimistic"` in DNS configuration
+### The new field `"cache_optimistic"` in DNS configuration
 
-* The new optional field `"cache_optimistic"` of `DNSConfig` makes AdGuard Home
-  use or not use the optimistic cache mechanism.
+* The new optional field `"cache_optimistic"` in `POST /control/dns_config`
+  method makes AdGuard Home use or not use the optimistic cache mechanism.
+
+* The new field `"cache_optimistic"` in `GET /control/dns_info` method is true
+  if AdGuard Home uses the optimistic cache mechanism.
 
 ###  Client IDs in Access Settings
 
