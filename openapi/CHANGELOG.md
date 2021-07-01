@@ -12,7 +12,6 @@
 * The new field `"cache_optimistic"` in `GET /control/dns_info` method is true
   if AdGuard Home uses the optimistic cache mechanism.
 
-###  Client IDs in Access Settings
 ### New possible value of `"interval"` field in `QueryLogConfig`
 
 * The value of `"interval"` field in `POST /control/querylog_config` and `GET
