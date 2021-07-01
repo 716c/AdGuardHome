@@ -13,6 +13,17 @@
   if AdGuard Home uses the optimistic cache mechanism.
 
 ###  Client IDs in Access Settings
+### New possible value of `"interval"` field in `QueryLogConfig`
+
+* The value of `"interval"` field in `POST /control/querylog_config` and `GET
+  /control/querylog_info` methods could now take the value of `0.25`.  It's
+  equal to 6 hours.
+
+* All the possible values of `"interval"` field are enumerated.
+
+* The type of `"interval"` field is now `number` instead of `integer`.
+
+### Client IDs in Access Settings
 
 * The `POST /control/access/set` HTTP API now accepts client IDs in
   `"allowed_clients"` and `"disallowed_clients"` fields.

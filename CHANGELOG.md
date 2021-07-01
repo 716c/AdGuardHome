@@ -16,6 +16,7 @@ and this project adheres to
 ### Added
 
 - Optimistic cache ([#2145]).
+- New possible value of `6h` for `querylog_interval` setting ([#2504]).
 - Blocking access using client IDs ([#2624], [#3162]).
 - `source` directives support in `/etc/network/interfaces` on Linux ([#3257]).
 - RFC 9000 support in DNS-over-QUIC.
@@ -36,13 +37,15 @@ and this project adheres to
   ([#3185]).
 - The ability to completely disable reverse DNS resolving of IPs from
   locally-served networks ([#3184]).
-- New flag `--local-frontend` to serve dinamically changeable frontend files
+- New flag `--local-frontend` to serve dynamically changeable frontend files
   from disk as opposed to the ones that were compiled into the binary.
 
 ### Changed
 
+- `querylog_interval` setting is now formatted in hours.
+- Query log search now supports internationalized domains ([#3012]).
 - Internationalized domains are now shown decoded in the query log with the
-  original encoded version shown in request details. ([#3013]).
+  original encoded version shown in request details ([#3013]).
 - When /etc/hosts-type rules have several IPs for one host, all IPs are now
   returned instead of only the first one ([#1381]).
 - The setting `rlimit_nofile` is now in the `os` block of the configuration
@@ -83,8 +86,10 @@ released by then.
 [#2439]: https://github.com/AdguardTeam/AdGuardHome/issues/2439
 [#2441]: https://github.com/AdguardTeam/AdGuardHome/issues/2441
 [#2443]: https://github.com/AdguardTeam/AdGuardHome/issues/2443
+[#2504]: https://github.com/AdguardTeam/AdGuardHome/issues/2504
 [#2624]: https://github.com/AdguardTeam/AdGuardHome/issues/2624
 [#2763]: https://github.com/AdguardTeam/AdGuardHome/issues/2763
+[#3012]: https://github.com/AdguardTeam/AdGuardHome/issues/3012
 [#3013]: https://github.com/AdguardTeam/AdGuardHome/issues/3013
 [#3136]: https://github.com/AdguardTeam/AdGuardHome/issues/3136
 [#3162]: https://github.com/AdguardTeam/AdGuardHome/issues/3162
@@ -149,7 +154,7 @@ released by then.
 ### Fixed
 
 - Local domain name handling when the DHCP server is disabled ([#3028]).
-- Normalization of perviously-saved invalid static DHCP leases ([#3027]).
+- Normalization of previously-saved invalid static DHCP leases ([#3027]).
 - Validation of IPv6 addresses with zones in system resolvers ([#3022]).
 
 [#3022]: https://github.com/AdguardTeam/AdGuardHome/issues/3022
